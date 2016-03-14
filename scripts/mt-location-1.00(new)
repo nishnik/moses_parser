@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Licenced under the GPL licence, version 3
+
+# Suggestion of Jonathan Chen (https://github.com/ypeels)
+
+# This file defines $mtdir, $mosesdir, $MMMdir and $mosesdirmine for all scripts
+
+####################################################################################
+# DO NOT CHANGE THE VARIABLES THAT FOLLOW IF YOU WANT TO USE THE DEMO
+####################################################################################
+# Full path of the directory that contains the Moses-for-Mere-Mortals folder
+# If you want $mosesdir and $MMMdir to be located in different disks, we suggest that you leave $mtdir empty
+mtdir="$HOME/Desktop"
+
+# Full path of the base directory of your Moses system (which will be created by this script) 
+mosesdir="$mtdir/MMM"
+
+# Full path of the place where the Moses for Mere Mortals scripts subdirectory is
+MMMdir="$mtdir/Moses-for-Mere-Mortals"
+
+# Base dir of the Moses system (e.g., $HOME/moses-irstlm-randlm) whose trainings you want to transfer to another location
+# This variable is only used in the transfer-training-to-another-location script
+mosesdirmine="$mosesdir"
